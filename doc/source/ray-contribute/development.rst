@@ -157,8 +157,8 @@ To build Ray on Ubuntu, run the following commands:
                 --slave /usr/bin/g++ g++ /usr/bin/g++-9 \
                 --slave /usr/bin/gcov gcov /usr/bin/gcov-9
 
-  # Install Bazel.
-  ci/env/install-bazel.sh
+  # Install Bazel and python module dependencies.
+  scripts/install-dependencies.sh
 
   # Install node version manager and node 14
   $(curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh)
