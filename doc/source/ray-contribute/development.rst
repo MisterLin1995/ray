@@ -157,8 +157,8 @@ To build Ray on Ubuntu, run the following commands:
                 --slave /usr/bin/g++ g++ /usr/bin/g++-9 \
                 --slave /usr/bin/gcov gcov /usr/bin/gcov-9
 
-  # Install Bazel.
-  ci/env/install-bazel.sh
+  # Install dependencies.
+  scripts/install-dependencies
 
   # Install node version manager and node 14
   $(curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh)
@@ -188,7 +188,7 @@ To build Ray on MacOS, first install these dependencies:
   brew install wget
 
   # Install Bazel.
-  ray/ci/env/install-bazel.sh
+  ray/env/install-bazel.sh
 
 Building Ray on Linux & MacOS (full)
 ------------------------------------
